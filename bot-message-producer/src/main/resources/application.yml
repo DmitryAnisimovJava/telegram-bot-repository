@@ -6,15 +6,3 @@ server:
 telegram:
   bot:
     need-registration: true
-
-spring:
-  datasource:
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
-    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_EXTERNAL_PORT:5432}/${DB_NAME}
-    hikari:
-      schema: ${DB_DEFAULT_SCHEMA}
-
-  liquibase:
-    liquibase-schema: ${DB_LIQUIBASE_DEFAULT_SCHEMA}
-    default-schema: ${DB_DEFAULT_SCHEMA}
